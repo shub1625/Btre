@@ -1,0 +1,45 @@
+{% comment %} Listing {% endcomment %}
+id: INT
+realtor: INT (FOREIGN KEY [REALTOR])
+title: STR
+address: STR
+city: STR
+state: STR
+zipcode: STR
+description: TEXT
+price: INT
+bedrooms: INT
+bathrooms: DECIMAL (upto 1 decimal place)
+garage: INT
+sqft: INT
+lot_size:FLOAT
+is_published : BOOL [TRUE]
+list_date: DATE
+photo_main: STR
+photo_1: STR
+photo_2: STR
+photo_3: STR
+photo_4: STR
+photo_5: STR
+photo_6: STR
+{% comment %} REALTOR {% endcomment %}
+
+id : INT
+name: STR
+photo:STR
+description:TEXT
+email:STR
+phone:STR
+is_mvp: BOOL [FALSE]
+hire_date: DATE
+
+{% comment %} CONTACT {% endcomment %}
+id: INT
+user_id : INT
+listing : INT
+listing_id : INT
+name : STR
+email : STR
+phone : STR
+massage : TEXT
+contact_date : DATE
