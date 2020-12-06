@@ -33,8 +33,8 @@ def contact(request):
         #Send Email
         subject = 'Property Listing Inquiry for '+ listing
         body = 'Hey , there has been inquiry for ' + listing + ' By '+ contact.name + ' Please checkout admin panel for more details'
-        from_email = ''
-        to_email = [realtor_email,'']
+        from_email = 'patneshubham23@gmail.com'
+        to_email = [realtor_email,]
         inq_data = 'name : '+name +'\n'+ 'massage : '+ message + '\n' + 'Phone : '+ phone
         email = EmailMessage(subject,body,from_email,to_email)
         email.attach('inquiry.txt', inq_data,'text/plain')
